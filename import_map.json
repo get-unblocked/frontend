@@ -1,0 +1,5 @@
+{
+    "imports": {
+      "std/http/cookie.ts": "https://deno.land/std/http/cookie.ts"
+    }
+  }
