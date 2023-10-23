@@ -1,41 +1,59 @@
-//
-//  ContentView.swift
-//  Try Unblocked
-//
-//  Created by cancelself on 10/22/23.
-//
-
 import SwiftUI
-import SwiftData
+
+@main
+struct TryUnblockedApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView(items: <#[Item]#>)
+                .modelContainer(for: Item.self, inMemory: true)
+        }
+    }
+}
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        TabView {
+            // First Tab (Existing ContentView)
+            NavigationView {
+                List {
+                    ForEach(items) { item in
+                        NavigationLink {
+                            Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        } label: {
+                            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
+                    ToolbarItem {
+                        Button(action: addItem) {
+                            Label("Add Item", systemImage: "plus")
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            .tabItem {
+                Label("Items", systemImage: "list.bullet")
             }
-        } detail: {
-            Text("Select an item")
+
+            // Second Tab (LoginView)
+            LoginView()
+                .tabItem {
+                    Label("Login", systemImage: "person.crop.circle")
+                }
+
+            // Third Tab (NotificationView)
+            NotificationView()
+                .tabItem {
+                    Label("Notifications", systemImage: "bell")
+                }
         }
     }
 
@@ -53,9 +71,11 @@ struct ContentView: View {
             }
         }
     }
+    
+    #Preview {
+        ContentView()
+            .modelContainer(for: Item.self, inMemory: true)
+    }
+
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
-}
