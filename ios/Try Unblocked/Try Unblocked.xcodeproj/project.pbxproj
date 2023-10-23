@@ -15,6 +15,9 @@
 		6E56CE382AE638D800400AE7 /* Try_UnblockedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE372AE638D800400AE7 /* Try_UnblockedTests.swift */; };
 		6E56CE422AE638D800400AE7 /* Try_UnblockedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE412AE638D800400AE7 /* Try_UnblockedUITests.swift */; };
 		6E56CE442AE638D800400AE7 /* Try_UnblockedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE432AE638D800400AE7 /* Try_UnblockedUITestsLaunchTests.swift */; };
+		6E56CE512AE63B1500400AE7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE502AE63B1500400AE7 /* LoginView.swift */; };
+		6E56CE532AE63B2600400AE7 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE522AE63B2600400AE7 /* NotificationView.swift */; };
+		6E56CE552AE63B3C00400AE7 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56CE542AE63B3C00400AE7 /* StorageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		6E56CE3D2AE638D800400AE7 /* Try UnblockedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Try UnblockedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E56CE412AE638D800400AE7 /* Try_UnblockedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try_UnblockedUITests.swift; sourceTree = "<group>"; };
 		6E56CE432AE638D800400AE7 /* Try_UnblockedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try_UnblockedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E56CE502AE63B1500400AE7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6E56CE522AE63B2600400AE7 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6E56CE542AE63B3C00400AE7 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				6E56CE282AE638D700400AE7 /* Item.swift */,
 				6E56CE2A2AE638D700400AE7 /* Assets.xcassets */,
 				6E56CE2C2AE638D700400AE7 /* Preview Content */,
+				6E56CE502AE63B1500400AE7 /* LoginView.swift */,
+				6E56CE522AE63B2600400AE7 /* NotificationView.swift */,
+				6E56CE542AE63B3C00400AE7 /* StorageView.swift */,
 			);
 			path = "Try Unblocked";
 			sourceTree = "<group>";
@@ -260,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E56CE552AE63B3C00400AE7 /* StorageView.swift in Sources */,
 				6E56CE272AE638D700400AE7 /* ContentView.swift in Sources */,
 				6E56CE292AE638D700400AE7 /* Item.swift in Sources */,
+				6E56CE512AE63B1500400AE7 /* LoginView.swift in Sources */,
 				6E56CE252AE638D700400AE7 /* Try_UnblockedApp.swift in Sources */,
+				6E56CE532AE63B2600400AE7 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
