@@ -1,15 +1,24 @@
 import { Handlers } from "$fresh/server.ts";
 import { setCookie } from "std/http/cookie.ts";
+import { fetch } from "std/fetch.ts";
 
 export const handler: Handlers = {
   async POST(req) {
     const url = new URL(req.url);
     const form = await req.formData();
 
-    //This is where we call Auth0 via the 
-    //auth service on the backend
+    const response = await fetch("https://tryunblocked.com/auth", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: form.get("username"),
+        password: form.get("password"),
+      }),
+    });
 
-    if (form.get("username") === "deno" && form.get("password") === "land") {
+    if (response.ok) {
       const headers = new Headers();
       setCookie(headers, {
         name: "auth",
