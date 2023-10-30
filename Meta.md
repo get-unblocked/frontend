@@ -8,6 +8,11 @@
 - [Populate the demo app with data frontend backend](https://tryunblocked.atlassian.net/browse/TU-13)
 - [Do security audit of storage service/posgres](https://tryunblocked.atlassian.net/browse/TU-12)
 - [Backend Feature: Implement the latest version of Auth0 in the Auth service](https://tryunblocked.atlassian.net/browse/TU-8)
+## Recent changes in the app
+### Frontend
+- We added iOS + Android apps
+### Backend
+- We added Auth0 support
 
 About Try Unblocked
 
