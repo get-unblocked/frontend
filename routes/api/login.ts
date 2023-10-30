@@ -1,6 +1,4 @@
 import { Handlers } from "$fresh/server.ts";
-import { setCookie } from "std/http/cookie.ts";
-import { fetch } from "std/fetch.ts";
 
 export const handler: Handlers = {
   async POST(req) {
