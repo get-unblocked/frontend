@@ -1,18 +1,24 @@
-# Try Unblocked Frontend
+# Try Unblocked Frontend apps 
 
-Our frontend is composed of a Wordpress CMS for marking and a Deno Fresh web app that we are using to demostrate the power of Unblocked. Previously, we used Unblocked itself to demo, but that is a little to meta for many and we want to have a way to demostrate Unblocked solving some specific problems for specific cases of developers.
+Our frontend is composed of a Wordpress CMS for marketing, Deno Fresh web app and iOS/Android apps that we are using to demostrate the power of Unblocked. Previously, we used Unblocked itself to demo, but that is a little to meta for many and we want to have a way to demostrate Unblocked solving some specific problems for specific cases of developers.
 
+### Frontend
+- Marketing Site: The marketing website for "Try Unblocked" is built on WordPress, a popular content management system. It serves as the platform for promoting the application to potential users.
+
+- Web App UI: The web-based user interface of "Try Unblocked" is developed using Deno and Fresh. Deno is a runtime for JavaScript and TypeScript, and Fresh is a Deno web framework. These technologies are employed to create an engaging and responsive web interface.
+
+- Mobile Apps: The application includes mobile versions for both iOS (Swift) and Android (Kotlin), ensuring a seamless user experience across platforms.
 
 ### Tech
 
 We use WordPress for our blog and marketing.
-We use Deno fresh for our frontend that that talks to our backend 
+We use Deno fresh for our web frontend that that talks to our backend 
 using microservices.
 We use Auth0 to authenticate users.
 We use firebase for notifications.
 We use postgres for our database.
 
-### Usage
+### Usage (Web)
 ```
 deno task start
 ```
