@@ -18,7 +18,7 @@
 
 - Try Unblocked is a demonstration application that showcases the capabilities of Unblocked for developers. It offers a comprehensive experience, combining various technologies and platforms to deliver a feature-rich application. Here's a breakdown of its primary components:
 
-### Frontend
+### The Frontend (explain the frontend app)
 - Marketing Site: The marketing website for "Try Unblocked" is built on WordPress, a popular content management system. It serves as the platform for promoting the application to potential users.
 - Web App UI: The web-based user interface of "Try Unblocked" is developed using Deno and Fresh. Deno is a runtime for JavaScript and TypeScript, and Fresh is a Deno web framework. These technologies are employed to create an engaging and responsive web interface.
 - Mobile Apps: The application includes mobile versions for both iOS (Swift) and Android (Kotlin), ensuring a seamless user experience across platforms.
@@ -37,6 +37,6 @@
 - Linear: Unblocked can also integrate with Linear. By connecting your Linear workspace to Unblocked, it can reference the knowledge and content from your Linear workspace to answer questions. This includes information about your project's tasks, issues, and progress. This integration allows Unblocked to provide insights based on your project's history and discussions in Linear.
 - Stack Overflow for Teams: Unblocked's integration with Stack Overflow for Teams allows it to reference knowledge and discussions from your Stack Overflow Team to answer questions asked in Unblocked. (Note: This integration is under development and not yet functional). This will be achieved by connecting your Stack Overflow Team to Unblocked, and once operational, Unblocked will access the content from your Stack Overflow Team to provide more comprehensive answers to your questions. This integration will allow Unblocked to provide insights based on your project's discussions and Q&A stored in Stack Overflow for Teams.
 
-###Infrastructure
+### Infrastructure
 - Docker Containers: Our services are hosted in Docker containers, ensuring scalability, flexibility, and ease of deployment. This allows us to manage our infrastructure efficiently.
 - AWS Integration: The application's infrastructure is hosted on Amazon Web Services (AWS), providing reliable cloud computing resources. AWS SageMaker powers various aspects of "Try Unblocked," including new Auth and Identity services, Notification services, and machine learning (ML) services.
