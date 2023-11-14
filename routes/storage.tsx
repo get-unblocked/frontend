@@ -2,7 +2,7 @@
 //this calls the backend via the api routes to get the data
 
 import React, { useEffect, useState } from "https://esm.sh/react";
-import { fetch } from "https://deno.land/std/fetch/mod.ts";
+import StorageData from '../components/StorageData.tsx';
 
 const Storage = () => {
   const [storageData, setStorageData] = useState([]);
@@ -21,10 +21,7 @@ const Storage = () => {
     <div>
       <h1>Storage Data</h1>
       {storageData.map((item, index) => (
-        <div key={index}>
-          <h2>{item.title}</h2>
-          <p>{item.description}</p>
-        </div>
+        <StorageData key={index} data={item} />
       ))}
     </div>
   );

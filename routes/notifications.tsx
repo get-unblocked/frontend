@@ -1,7 +1,6 @@
 //this is the ux to show the user notifications
 //this calls the backend via the api routes to get the notifications
 import React, { useEffect, useState } from "https://esm.sh/react";
-import { fetch } from "https://deno.land/std/fetch/mod.ts";
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
